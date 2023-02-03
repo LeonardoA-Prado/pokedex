@@ -7,6 +7,20 @@ body {
     padding: 20px;
   }
   
+ li a input#buscar {
+    padding: 0.5em 0.1em;
+    box-sizing: border-box;
+    border: 0.2em solid #000000;
+    overflow: visible;
+  }
+  li a input#buscar:hover {
+    padding: 0.5em 0.1em;
+    background-color: gray;
+    box-sizing: border-box;
+    border: 0.2em solid #000000;
+    overflow: visible;
+  }
+
   nav ul {
     display: flex;
     list-style: none;
