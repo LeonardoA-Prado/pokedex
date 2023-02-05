@@ -1,20 +1,35 @@
 body {
     font-family: Arial, sans-serif;
+    width: 80%;
+    margin: 0 auto;
   }
-  
+
+  @font-face {
+    font-family: "Letra pokemon";
+    src: url("/fuentes/Pokemon\ Solid.ttf");
+    
+  }
+
+
   header {
-    background-color: lightgray;
-    padding: 20px;
+    font-family: "Letra pokemon";
+    color: 	#000000;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0.0001em;
+    
   }
-  
+  li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+
  li a input#buscar {
-    padding: 0.5em 0.1em;
     box-sizing: border-box;
-    border: 0.2em solid #000000;
+    border: 0.2em solid #666464;
     overflow: visible;
   }
   li a input#buscar:hover {
-    padding: 0.5em 0.1em;
     background-color: gray;
     box-sizing: border-box;
     border: 0.2em solid #000000;
@@ -25,11 +40,12 @@ body {
     display: flex;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0.1rem;
   }
   
   nav li {
-    margin-right: 20px;
+    
+    margin-right: 10px;
   }
   
   .pokemons {
@@ -57,7 +73,7 @@ body {
     padding: 20px;
   }
 
-  main{
-    width: 80%;
-    margin: 0 auto;
+  main h1 {
+    font-family: "Letra pokemon";
+    font-size: 1.5em;
   }
