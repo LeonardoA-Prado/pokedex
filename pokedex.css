@@ -78,6 +78,26 @@ body {
     height: 1.7em;
     outline: 0.1rem solid #000000;
   }
+
+  div.pokemon input#Agua {
+    color:#ffffff;
+    border-radius:8px;
+    background-color: blue;
+    border: 0.1em solid white;
+    width: 4em;
+    height: 1.7em;
+    outline: 0.1rem solid #000000;
+  }
+
+  div.pokemon input#Planta {
+    color:#ffffff;
+    border-radius:8px;
+    background-color: darkgreen;
+    border: 0.1em solid darkolivegreen;
+    width: 4em;
+    height: 1.7em;
+    outline: 0.1rem solid #000000;
+  }
   
   footer {
     background-color: lightgray;
