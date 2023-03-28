@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    width: 80%;
+    width: 78%;
     margin: 0 auto;
   }
 
@@ -59,16 +59,27 @@ body {
   }
   
   .pokemon {
-    width: 30%;
+    width: 40%;
     margin-bottom: 20px;
     display: inline-block;
-    width: 120px;
+    width: 200px;
     margin: 1%;
     outline: 3px solid #000000;
     border-radius: 20px;
     padding: 0.8%;
 
   }
+
+.nombrePokemon {
+  font-size: 18px;
+  
+  }
+
+.pokemon img{
+  height: 200px; 
+  width: 200px;
+}
+
   div.pokemon input#Fuego {
     color:#ffffff;
     border-radius:8px;
