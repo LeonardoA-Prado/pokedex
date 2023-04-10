@@ -109,3 +109,7 @@ body {
     font-family: "Letra pokemon";
     font-size: 1.5em;
   }
+  .oscuro{ 
+    background-color: #070606; 
+    color: #f3eaea; 
+}
