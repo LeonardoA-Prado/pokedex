@@ -1,4 +1,4 @@
-    const pokemons = document.getElementById("pokemons");
+      const pokemons = document.getElementById("pokemons");
     const datoPokemon = [];
 
 function solicitarPokemon(id) { //Recorre el numero de pokemons pasado por parametro en solicitarPokemons
@@ -37,4 +37,7 @@ async function cargarPokemons() {
 
 cargarPokemons();
 
-
+function cambiarModo() { 
+  var cuerpoweb = document.body; 
+  cuerpoweb.classList.toggle("oscuro"); 
+}
