@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    width: 80%;
+    width: 78%;
     margin: 0 auto;
   }
 
@@ -59,41 +59,32 @@ body {
   }
   
   .pokemon {
-    width: 30%;
+    width: 40%;
     margin-bottom: 20px;
     display: inline-block;
-    width: 120px;
+    width: 200px;
     margin: 1%;
-    outline: 3px dotted #000000;
+    outline: 3px solid #000000;
     border-radius: 20px;
     padding: 0.8%;
 
   }
+
+.nombrePokemon {
+  font-size: 18px;
+  
+  }
+
+.pokemon img{
+  height: 200px; 
+  width: 200px;
+}
+
   div.pokemon input#Fuego {
     color:#ffffff;
     border-radius:8px;
     background-color: red;
     border: 0.1em solid orange;
-    width: 4em;
-    height: 1.7em;
-    outline: 0.1rem solid #000000;
-  }
-
-  div.pokemon input#Agua {
-    color:#ffffff;
-    border-radius:8px;
-    background-color: blue;
-    border: 0.1em solid white;
-    width: 4em;
-    height: 1.7em;
-    outline: 0.1rem solid #000000;
-  }
-
-  div.pokemon input#Planta {
-    color:#ffffff;
-    border-radius:8px;
-    background-color: darkgreen;
-    border: 0.1em solid darkolivegreen;
     width: 4em;
     height: 1.7em;
     outline: 0.1rem solid #000000;
@@ -109,7 +100,3 @@ body {
     font-family: "Letra pokemon";
     font-size: 1.5em;
   }
-  .oscuro{ 
-    background-color: #070606; 
-    color: #f3eaea; 
-}
