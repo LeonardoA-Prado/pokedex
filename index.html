@@ -18,6 +18,7 @@
           <li><a href="#"> | Inicio |</a></li>
           <li><a href="#"> Búsqueda: <input id="buscar" type="search" 
             placeholder="Nº o Nombre Pokémon"> |</a></li> 
+          <button type="button" class="btn btn-dark" onclick="cambiarModo()">Oscuro / Claro</button>
         </ul>
       </nav>
     </header>
@@ -147,5 +148,13 @@
     </footer>
    
     <script src="scripts/crearPokemon.js"></script>
+
+    <script type="text/javascript"> 
+      function cambiarModo() { 
+        var cuerpoweb = document.body; 
+        cuerpoweb.classList.toggle("oscuro"); 
+      } 
+
+    </script>
 </body>
 </html>
