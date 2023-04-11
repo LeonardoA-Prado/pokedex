@@ -37,7 +37,4 @@ async function cargarPokemons() {
 
 cargarPokemons();
 
-function cambiarModo() { 
-  var cuerpoweb = document.body; 
-  cuerpoweb.classList.toggle("oscuro"); 
-}                                         //para crear una variable llamada cuerpoweb y dentro de ella llamar a todo el body o cuerpo del sitio web.
+
