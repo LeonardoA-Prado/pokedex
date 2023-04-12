@@ -7,154 +7,174 @@
     <link rel="shortcut icon" href="/iconos/masterbola.png" type="image/x-icon"> <!--Icono-->
     <title>Pokedex</title>
     <link rel="stylesheet" href="pokedex.css"> <!--Estilo-->
-    
 </head>
 <body>
- 
+
     <header>
       <nav>
         <h1>Pokédex <img src="/iconos/masterbola3d.png" width="40em" alt=""></h1>
         <ul>
-          <li><a href="#"> | Inicio |</a></li>
-          <li><a href="#"> Búsqueda: <input id="buscar" type="search" 
-            placeholder="Nº o Nombre Pokémon"> |</a></li> 
+          <li><a href="index.html"> Inicio </a></li>
+          <li><a href="#"> Búsqueda: <input id="buscar" type="text"  onkeyup="Buscar()"
+            placeholder="Nº o Nombre Pokémon"> </a></li> 
           <button type="button" class="btn btn-dark" onclick="cambiarModo()">Oscuro / Claro</button>
         </ul>
       </nav>
+      
+      <p></p>
     </header>
-    <hr>
+  
     <main>
       <h1>Generación 1</h1>
       <div class="pokemons">
+        
+        <div class="pokemon">
+          <a href="detalle.html">
+          <img alt="ImagenPokemon">
+          <p class="numeroPoke"></p>
+          <p class="nombrePokemon">
+          <p class="tipo"><!--Tipo--> </p>
+          </a>
+        </div> 
         <div class="pokemon">
           <img alt="ImagenPokemon">
           <p class="numeroPoke"></p>
           <p class="nombrePokemon">
-          <p><!--Tipo--> </p>
+          <p class="tipo"><!--Tipo--> </p>
         </div>
         <div class="pokemon">
           <img alt="ImagenPokemon">
           <p class="numeroPoke"></p>
           <p class="nombrePokemon">
-          <p><!--Tipo--> </p>
-        </div>
-        <div class="pokemon">
-          <img alt="ImagenPokemon">
-          <p class="numeroPoke"></p>
-          <p class="nombrePokemon">
-          <p><!--Tipo--> </p>
+          <p class="tipo"><!--Tipo--> </p>
         </div>
         <div class="pokemon">
           <img alt="ImagenPokemon">
           <p class="numeroPoke"></p>
           <p class="nombrePokemon"></p>
-          <p><!--Tipo--> </p>
-          <!-- Eso es solo de ilustración => --><p><input id="Fuego" name="Fuego" type="button" value="Fuego">&nbsp<input id="Fuego" name="Fuego" type="button" value="Fuego"></p> 
+          <p class="tipo"><!--Tipo--> </p>
         </div>
       </div>
-      <hr>
-      <hr>
+
       <div class="pokemons">
         <div class="pokemon">
           <img alt="ImagenPokemon">
           <p class="numeroPoke"></p>
           <p class="nombrePokemon">
-          <p><!--Tipo--> </p>
+          <p class="tipo"><!--Tipo--> </p>
         </div>
         <div class="pokemon">
           <img alt="ImagenPokemon">
           <p class="numeroPoke"></p>
           <p class="nombrePokemon">
-          <p><!--Tipo--> </p>
+          <p class="tipo"><!--Tipo--> </p>
         </div>
         <div class="pokemon">
           <img alt="ImagenPokemon">
           <p class="numeroPoke"></p>
           <p class="nombrePokemon">
-          <p><!--Tipo--> </p>
+          <p class="tipo"><!--Tipo--> </p>
         </div>
         <div class="pokemon">
           <img alt="ImagenPokemon">
           <p class="numeroPoke"></p>
           <p class="nombrePokemon"></p>
-          <p><!--Tipo--> </p>
+          <p class="tipo"><!--Tipo--></p>
         </div>
       </div>
-      <hr>
-      <hr>
-      <div class="pokemons">
 
-        <div class="pokemon">
-          <img alt="ImagenPokemon">
-          <p class="numeroPoke"></p>
-          <p class="nombrePokemon">
-          <p><!--Tipo--> </p>
-        </div>
-        <div class="pokemon">
-          <img alt="ImagenPokemon">
-          <p class="numeroPoke"></p>
-          <p class="nombrePokemon">
-          <p><!--Tipo--> </p>
-        </div>
-        <div class="pokemon">
-          <img alt="ImagenPokemon">
-          <p class="numeroPoke"></p>
-          <p class="nombrePokemon">
-          <p><!--Tipo--> </p>
-        </div>
-        <div class="pokemon">
-          <img alt="ImagenPokemon">
-          <p class="numeroPoke"></p>
-          <p class="nombrePokemon"></p>
-          <p><!--Tipo--> </p> 
-        </div>
-
-      </div>
-      <hr>
-      <hr>
       <div class="pokemons">
 
         <div class="pokemon">
           <img alt="ImagenPokemon">
           <p class="numeroPoke"></p>
           <p class="nombrePokemon">
-          <p><!--Tipo--> </p>
+          <p class="tipo"><!--Tipo--> </p>
+          
         </div>
         <div class="pokemon">
           <img alt="ImagenPokemon">
           <p class="numeroPoke"></p>
           <p class="nombrePokemon">
-          <p><!--Tipo--> </p>
+          <p class="tipo"><!--Tipo--> </p>
         </div>
         <div class="pokemon">
           <img alt="ImagenPokemon">
           <p class="numeroPoke"></p>
           <p class="nombrePokemon">
-          <p><!--Tipo--> </p>
+          <p class="tipo"><!--Tipo--> </p>
         </div>
         <div class="pokemon">
           <img alt="ImagenPokemon">
           <p class="numeroPoke"></p>
           <p class="nombrePokemon"></p>
-          <p><!--Tipo--> </p> 
+          <p class="tipo"><!--Tipo--> </p> 
         </div>
 
       </div>
 
+      <div class="pokemons">
+
+        <div class="pokemon">
+          <img alt="ImagenPokemon">
+          <p class="numeroPoke"></p>
+          <p class="nombrePokemon">
+          <p class="tipo"><!--Tipo--> </p>
+        </div>
+        <div class="pokemon">
+          <img alt="ImagenPokemon">
+          <p class="numeroPoke"></p>
+          <p class="nombrePokemon">
+          <p class="tipo"><!--Tipo--> </p>
+        </div>
+        <div class="pokemon">
+          <img alt="ImagenPokemon">
+          <p class="numeroPoke"></p>
+          <p class="nombrePokemon">
+          <p class="tipo"><!--Tipo--> </p>
+        </div>
+        <div class="pokemon">
+          <img alt="ImagenPokemon">
+          <p class="numeroPoke"></p>
+          <p class="nombrePokemon"></p>
+          <p class="tipo"><!--Tipo--> </p> 
+        </div>
+
+      </div>
+      <div class="pokemons">
+        <div class="pokemon">
+          <img alt="ImagenPokemon">
+          <p class="numeroPoke"></p>
+          <p class="nombrePokemon">
+          <p class="tipo"><!--Tipo--> </p>
+        </div>
+        <div class="pokemon">
+          <img alt="ImagenPokemon">
+          <p class="numeroPoke"></p>
+          <p class="nombrePokemon">
+          <p class="tipo"><!--Tipo--> </p>
+        </div>
+        <div class="pokemon">
+          <img alt="ImagenPokemon">
+          <p class="numeroPoke"></p>
+          <p class="nombrePokemon">
+          <p class="tipo"><!--Tipo--> </p>
+        </div>
+        <div class="pokemon">
+          <img alt="ImagenPokemon">
+          <p class="numeroPoke"></p>
+          <p class="nombrePokemon"></p>
+          <p class="tipo"><!--Tipo--> </p>
+        </div>
+      </div>
   
     </main>
     <footer>
-      <p>Creadores: Leonardo Almeida y Alvaro Fernandez | Acerca de .... </p>
+      <p class="tipo">Creadores: Leonardo Almeida y Alvaro Fernandez | Acerca de .... </p>
     </footer>
    
     <script src="scripts/crearPokemon.js"></script>
-
-    <script type="text/javascript"> 
-      function cambiarModo() { 
-        var cuerpoweb = document.body; 
-        cuerpoweb.classList.toggle("oscuro"); 
-      } 
-
-    </script>
+    <script src="scripts/buscar.js"></script>
+    <script src="scripts/modos.js"></script>
 </body>
 </html>
