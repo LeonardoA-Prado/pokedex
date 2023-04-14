@@ -162,7 +162,7 @@ pokemonBlocks.forEach((block) => {
       return pokemon.name === block.querySelector(".nombrePokemon").textContent;
     });
     localStorage.setItem("pokemonSeleccionado", JSON.stringify(selectedPokemon));
-    window.location.href = "detalles.html";
+    window.location.href = "detalhes.html";
   });
 });
 
