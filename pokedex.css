@@ -59,6 +59,19 @@ nav ul {
     overflow: visible;
   }
 
+  li button {
+  color: rgb(0, 0, 0);
+   text-decoration: none;
+   border: #050505 2px solid;
+   background-color: white;
+   border-radius: 15px;
+}
+
+li button img{
+  width: 40px;
+  height: 40px;
+}
+
   nav ul {
     display: flex;
     list-style: none;
@@ -245,3 +258,7 @@ nav ul {
   
 }
 
+.oscuro{ 
+  background-color: #1f1f1f; 
+  color: #f1eded; 
+}
