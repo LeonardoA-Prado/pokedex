@@ -14,6 +14,7 @@ async function solicitarPokemons(numero){ //Recorre todos los pokemons
     }
     
     datoPokemon.sort((a,b) => a.id - b.id); // Organiza los pokemons para que no salgan desordenados.
+    
     return datoPokemon;
 }
 
@@ -69,6 +70,9 @@ function obtenerColorTipo(tipo) {
     case 'fairy':
       color = '#E79FE7';
       break;
+      case 'fighting':
+        color = '#A05038';
+        break;
     default:
       color = 'gray';
   }
@@ -112,6 +116,8 @@ function traducirTipo(tipo) {
       return 'Hada';
     case 'normal':
       return 'Normal';
+    case 'fighting':
+      return 'Lucha';
     default:
       return 'Desconocido';
   }
@@ -119,15 +125,13 @@ function traducirTipo(tipo) {
 
 function crearPokemon(pokemon, elemento){
   const imagen = elemento.querySelector("img");
-  imagen.src = pokemon.sprites.versions["generation-v"]["black-white"].animated.front_default; // Solicita imagen frontal en 3D
+  imagen.src = pokemon.sprites.versions["generation-v"]["black-white"].animated.front_default; // Solicita imagen frontal 
 
   const numero = elemento.querySelector(".numeroPoke");
   numero.textContent = `#${pokemon.id.toString().padStart(3, 0)}`; // Solicita el numero con 3 posiciones, añadiendo 2 ceros al principio. 
 
   const name = elemento.querySelector(".nombrePokemon");
-  name.textContent = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1).toLowerCase();// Solicita el nombre del pokemon con la primera letra en mayuscula y el resto en minusculas
-
-  console.log(`Creado ${pokemon.name}`); //Envia mensaje a la consola(solo para probar el funcionamiento de la API)
+  name.textContent = pokemon.name;
 
 
   const tipoContainer = elemento.querySelector(".tipo");
@@ -149,13 +153,33 @@ function crearPokemon(pokemon, elemento){
   });
 }
 
+
+
+const pokemonBlocks = document.querySelectorAll(".pokemon");
+pokemonBlocks.forEach((block) => {
+  block.addEventListener("click", () => {
+    const selectedPokemon = datoPokemon.find((pokemon) => {
+      return pokemon.name === block.querySelector(".nombrePokemon").textContent;
+    });
+    localStorage.setItem("pokemonSeleccionado", JSON.stringify(selectedPokemon));
+    window.location.href = "detalhes.html";
+  });
+});
+
 async function cargarPokemons() { 
-  const pokemons = await solicitarPokemons(20); 
+  const pokemons = await solicitarPokemons(151); 
   const pokemonBlocks = document.querySelectorAll(".pokemon");
   pokemons.forEach((pokemon, index) => {
     crearPokemon(pokemon, pokemonBlocks[index]);
   });
+
+  
 }           //  crea y agrega los elementos HTML de cada pokemon. Finalmente, se llama a la función cargarPokemons() para iniciar la aplicación.
 
+
+
+export{ obtenerColorTipo, traducirTipo, crearPokemon}
+
 cargarPokemons();
+
 

@@ -4,27 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="/iconos/masterbola.png" type="image/x-icon">
+    <title>Pokedex</title>
     <link rel="stylesheet" href="pokedex.css">
 </head>
-<body>
+<body class="helo">
     <header>
         <nav>
           <h1>Pokédex <img src="/iconos/masterbola3d.png" width="40em" alt=""></h1>
           <ul>
-            <li><a href="index.html"> | Inicio |</a></li>
-            <li><a href="#"> Búsqueda: <input id="buscar" type="search" 
-              placeholder="Nº o Nombre Pokémon"> |</a></li> 
+            <li><a href="index.html"> |  Volver |</a></li>
+            
           </ul>
         </nav>
       </header>
-      <div class="pokemon">
-        
-       <h1>Parte Detallada</h1>
-        <p class="numeroPoke"></p>
-        <p class="nombrePokemon">
-        <p class="tipo"> </p>
+     <div class="pokemons-detalle">
+      <div class="pokemon-detalle">
+        <img id="imagenPokemon" alt="ImagenPokemon">
+        <p id="numeroPoke" class="numeroPoke"></p>
+        <p id="nombrePokemon" class="nombrePokemon"></p>
+        <p class="tipo"><!--Tipo--> </p>
         
       </div>
+      <div class="estadisticas-container">
+        <p class="altura"></p><p class="peso"></p>
+      </div>
+    </div>
+      <script type="module" src="scripts/detalle.js"></script>
+      
+      
 </body>
 </html>
