@@ -1,4 +1,4 @@
-import { obtenerColorTipo, traducirTipo, crearPokemon } from 'scripts/crearPokemon.js';
+import { obtenerColorTipo, traducirTipo, crearPokemon } from 'crearPokemon.js';
 
 async function cargarDetallesPokemon() {
     const pokemonData = JSON.parse(localStorage.getItem("pokemonSeleccionado"));
