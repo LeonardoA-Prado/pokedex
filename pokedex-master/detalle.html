@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/iconos/masterbola.png" type="image/x-icon">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="pokedex.css">
+</head>
+<body class="helo">
+    <header>
+        <nav>
+          <h1>Pokédex <img src="/iconos/masterbola3d.png" width="40em" alt=""></h1>
+          <ul>
+            <li><a href="index.html"> |  Volver |</a></li>
+            <button type="button" class="btn btn-dark" onclick="cambiarModo()">Oscuro / Claro</button>
+          </ul>
+         
+        </nav>
+      </header>
+     <div class="pokemons-detalle">
+      <div class="pokemon-detalle">
+        <img id="imagenPokemon" alt="ImagenPokemon">
+        <p id="numeroPoke" class="numeroPoke"></p>
+        <p id="nombrePokemon" class="nombrePokemon"></p>
+        <p class="tipo"><!--Tipo--> </p>
+        
+      </div>
+      <div class="estadisticas-container">
+        <p class="altura"></p><p class="peso"></p>
+      </div>
+    </div>
+      <script type="module" src="scripts/detalle.js"></script>
+      <script src="scripts/modos.js"></script>
+      
+</body>
+</html>
